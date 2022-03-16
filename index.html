@@ -1,21 +1,620 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="./assets/webp/JavaScript-Logo.webp"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="./assets/webp/JavaScript-Logo.webp"
+      type="image/x-icon"
+    />
+    <title>JavaScript Brasil - WebSite</title>
+    <meta name="description" content="JavaScript Brasil WebSite" />
 
-  <title>JavaScript Brasil</title>
-  
-  <!-- HTML -->
-  
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/webp/JavaScript-Logo.webp"
+              alt="JavaScript Logo"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">JavaScript Brasil</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link"> Início </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#historia" class="header__link">História </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#exemplos-de-scripts" class="header__link">
+                Exemplos de scripts
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#ferramentas-de-desenvolvimento" class="header__link">
+                Ferramentas de Desenvolvimento
+              </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./"> Início </a>
+            </li>
 
-<body>
-  <!-- Project -->
-  <script src="main.js"></script>
-</body>
+            <li class="header__sm-menu-link">
+              <a href="./#historia"> História </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#exemplos-de-scripts"> Exemplos de scripts </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#ferramentas-de-desenvolvimento">
+                Ferramentas de Desenvolvimento
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">JavaScript</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            A atual e principal linguagem para programação client-side em
+            navegadores web.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#historia" class="btn btn--bg">História</a>
+        </div>
+      </div>
+      <!--
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a
+            href="https://www.linkedin.com/in/andre-ribas1/"
+            class="home-hero__social-icon-link"
+          >
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://github.com/AndreRibas1/"
+            class="home-hero__social-icon-link"
+          >
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://twitter.com/andre_ribas1"
+            class="home-hero__social-icon-link"
+          >
+            <img
+              src="./assets/png/twitter-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://t.me/andre_ribas"
+            class="home-hero__social-icon-link"
+          >
+            <img
+              src="./assets/png/tg-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://instagram.com/andre_ribas1"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      -->
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="historia" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">História</span>
+          <span class="heading-sec__sub">
+            JavaScript (mas conhecido como JS) é uma
+            <strong>linguagem de programação interpretada e estruturada</strong
+            >, de script em alto nível com
+            <strong>tipagem dinâmica fraca e multiparadigma</strong>
+            (protótipos, orientado a objeto, imperativo e, funcional).
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Sobre o JS</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Em 1993, o
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/National_Center_for_Supercomputing_Applications"
+                  title="National Center for Supercomputing Applications"
+                  >Centro Nacional de Aplicações de Supercomputação</a
+                >
+                (NCSA), uma unidade da
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/Universidade_de_Illinois"
+                  title="Universidade de Illinois"
+                  >Universidade de Illinois</a
+                >
+                em Urbana-Champaign, lançou o
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/Mosaic"
+                  title="Mosaic"
+                  >NCSA Mosaic</a
+                >, o primeiro navegador gráfico popular da Web, que desempenhou
+                um papel importante na expansão do crescimento da nascente
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/World_Wide_Web"
+                  title="World Wide Web"
+                  >World Wide Web</a
+                >
+                além do nicho
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/NeXT"
+                  title="NeXT"
+                  >NeXTSTEP</a
+                >
+                onde a World Wide Web havia se formado três anos antes. Em 1994,
+                uma empresa chamada
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/Mosaic_Communications_Corporation"
+                  class="mw-redirect"
+                  title="Mosaic Communications Corporation"
+                  >Mosaic Communications</a
+                >
+                foi fundada em
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/Mountain_View_(Calif%C3%B3rnia)"
+                  class="mw-redirect"
+                  title="Mountain View (Califórnia)"
+                  >Mountain View</a
+                >, na Califórnia, e empregou muitos dos autores originais do
+                NCSA Mosaic para criar o Mosaic Netscape. No entanto, não
+                compartilhou intencionalmente nenhum código com o NCSA Mosaic. O
+                codinome interno do navegador da empresa era Mozilla, uma junção
+                de "Mosaic and
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/Godzilla"
+                  title="Godzilla"
+                  >Godzilla</a
+                >". A primeira versão do navegador da Web, Mosaic Netscape 0.9,
+                foi lançada no final de 1994. Em quatro meses, já havia
+                conquistado três quartos do mercado de navegadores e se tornado
+                o principal navegador da Web nos anos 90. Para evitar problemas
+                de propriedade de marca registrada com o NCSA, o navegador foi
+                posteriormente renomeado para
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/Netscape_Navigator"
+                  title="Netscape Navigator"
+                  >Netscape Navigator</a
+                >
+                no mesmo ano, e a empresa assumiu o nome de
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/Netscape_Communications"
+                  class="mw-redirect"
+                  title="Netscape Communications"
+                  >Netscape Communications</a
+                >. A Netscape Communications percebeu que a Web precisava se
+                tornar mais dinâmica.
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/Marc_Andreessen"
+                  title="Marc Andreessen"
+                  >Marc Andreessen</a
+                >, o fundador da empresa, acreditava que o
+                <a
+                  target="_blank"
+                  href="https://pt.wikipedia.org/wiki/HTML"
+                  title="HTML"
+                  >HTML</a
+                >
+                precisava de uma "linguagem de cola" que fosse fácil de usar por
+                Web designers e programadores de meio período para montar
+                componentes como imagens e plugins, onde o código poderia ser
+                escrito diretamente na Web.
+              </p>
+              <p class="about__content-details-para">
+                O JavaScript 1.0 foi lançado em 1995, quando a internet ainda
+                era uma invenção relativamente nova. O primeiro navegador da
+                web, o Mosaic, havia sido lançado há apenas dois anos, e o HTML
+                era a única ferramenta para construir sites - na época, o CSS
+                ainda era uma proposta e não seria oficialmente lançado até
+                1996. Em vista disso, a criação de sites ainda era uma
+                habilidade um tanto fácil de aprender, algo que era acessível
+                não apenas a engenheiros de software, mas também a
+                desenvolvedores e designers inexperientes.
+              </p>
+              <p class="about__content-details-para">
+                Andressen, queria expandir as capacidades do navegador
+                adicionando mais elementos dinâmicos. Ao mesmo tempo, ele queria
+                que esses elementos estivessem disponíveis para o novo e
+                crescente mercado de desenvolvedores amadores da web. Então,
+                nasceu a ideia de criar uma linguagem de scripting simples e
+                dinâmica, que um dia seria conhecida como JavaScript.
+              </p>
+              <p class="about__content-details-para">
+                A disponibilidade do JavaScript na versão beta do Netscape 2.0
+                foi anunciada em um<a
+                  target="_blank"
+                  href="https://tech-insider.org/java/research/1995/1204.html"
+                >
+                  press release de dezembro de 1995</a
+                >, que descreveu o JavaScript como:
+              </p>
+              <ol class="about__content-details-para">
+                <li>1. projetado para criar aplicações centradas em rede;</li>
+                <li>2. complementar e integrado ao Java;</li>
+                <li>3. complementar e integrado ao HTML;</li>
+                <li>4. aberto e multiplataforma.</li>
+              </ol>
+            </div>
+
+            <a
+              href="./#exemplos-de-scripts"
+              class="btn btn--med btn--theme dynamicBgClr"
+              >Exemplos de scripts</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="exemplos-de-scripts" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Exemplos de scripts</span>
+          <span class="heading-sec__sub"> Alguns exemplos do JavaScript </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <pre><span></span><span class="c1">                // Mostra um alerta de Confirmar e Cancelar.</span>
+                <span class="k">if</span> <span class="p">(</span> <span class="nx">confirm</span><span class="p">(</span> <span class="s1">'Escolha "Ok" ou "Cancelar" para ver a mensagem correspondente.'</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+                 <span class="nx">alert</span><span class="p">(</span> <span class="s1">'Você apertou o botão "OK"'</span> <span class="p">);</span> <span class="c1">// mostra um alerta para resposta "OK"</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                 <span class="nx">alert</span><span class="p">(</span> <span class="s1">'Você apertou o botão "Cancelar"'</span> <span class="p">);</span> <span class="c1">// mostra um alerta para resposta "Cancelar"</span>
+                <span class="p">}</span>
+                </pre>
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Scripts Simples</h3>
+              <!--
+              <p class="projects__row-content-desc">
+                Descrição
+              </p>
+              <a
+                href="./link-do-botão.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Nome do botão</a
+              >
+              -->
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <pre><span></span><span class="c1">                // Este comentário ocupa uma única linha</span>
+
+                <span class="cm">/* Já este comentário</span>
+                <span class="cm">é mais longo e utiliza</span>
+                <span class="cm">várias linhas */</span>
+                </pre>
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Comentários</h3>
+              <p class="projects__row-content-desc">
+                JavaScript permite utilizar comentários de duas formas:
+              </p>
+              <ul class="projects__row-content-desc">
+                <li>• Comentários de única linha;</li>
+                <li>• Comentários de múltiplas linhas.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <pre><span></span><span class="kd">function</span> <span class="nx">nomeDaFuncao</span><span class="p">(</span> <span class="cm">/*parâmetros*/</span> <span class="p">)</span> <span class="p">{</span>
+                <span class="cm">/* código que será executado */</span>
+               
+                <span class="k">return</span><span class="cm">/*Valor retornado*/</span><span class="p">;</span>
+               <span class="p">}</span>
+               </pre>
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Funções</h3>
+              <p class="projects__row-content-desc">
+                Criando uma função simples
+              </p>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <pre><span></span><span class="c1">//Construtor</span>
+                <span class="c1">//Construtor</span>
+                <span class="kd">function</span> <span class="nx">Exemplo</span><span class="p">()</span> <span class="p">{</span>
+                    <span class="k">this</span><span class="p">.</span><span class="nx">propriedade</span> <span class="o">=</span> <span class="s1">'Isso é uma propriedade.'</span><span class="p">,</span>
+                        <span class="k">this</span><span class="p">.</span><span class="nx">metodo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+                            <span class="k">return</span> <span class="s1">'Isso é um metódo'</span><span class="p">;</span>
+                        <span class="p">}</span>
+                <span class="p">}</span>
+                
+                <span class="kd">var</span> <span class="nx">objeto</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">Exemplo</span><span class="p">();</span> <span class="c1">//Instância do construtor "Exemplo"</span>
+                
+                <span class="c1">//Alerta os respectivos textos na tela</span>
+                <span class="nx">alert</span><span class="p">(</span><span class="nx">objeto</span><span class="p">.</span><span class="nx">propriedade</span><span class="p">),</span>
+                    <span class="nx">alert</span><span class="p">(</span><span class="nx">objeto</span><span class="p">.</span><span class="nx">metodo</span><span class="p">());</span>
+                </pre>
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Hierarquia do objeto</h3>
+              <!--
+              <p class="projects__row-content-desc">
+                Descrição
+              </p>
+              -->
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <pre><span></span><span class="kd">function</span> <span class="nx">perfectNumbers</span><span class="p">(</span><span class="nx">max</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">j</span><span class="p">,</span> <span class="nx">k</span><span class="p">,</span>
+                    <span class="nx">perfects</span> <span class="o">=</span> <span class="p">[];</span>
+            
+                <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="o">&lt;</span> <span class="nx">max</span><span class="p">;)</span> <span class="p">{</span>
+                    <span class="k">for</span> <span class="p">(</span><span class="nx">j</span> <span class="o">=</span> <span class="nx">k</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="o">++</span><span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">i</span><span class="p">;)</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">%</span> <span class="nx">j</span> <span class="o">===</span> <span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="nx">k</span> <span class="o">+=</span> <span class="nx">j</span><span class="p">;</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+            
+                    <span class="k">if</span> <span class="p">(</span><span class="nx">k</span> <span class="o">===</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="nx">perfects</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">k</span><span class="p">);</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            
+                <span class="k">return</span> <span class="nx">perfects</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">', '</span><span class="p">);</span>
+            <span class="p">}</span>
+            
+            <span class="nx">alert</span><span class="p">(</span><span class="s1">'Números perfeitos de 1 a 5000:'</span> <span class="o">+</span> <span class="nx">perfectNumbers</span><span class="p">(</span><span class="mf">5000</span><span class="p">));</span>
+            </pre>
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Números Perfeitos</h3>
+              <!--
+              <p class="projects__row-content-desc">
+                Descrição
+              </p>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="ferramentas-de-desenvolvimento"
+      class="footer sec-pad dynamicBg"
+    >
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt"
+            >Ferramentas de Desenvolvimento</span
+          >
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Ferramentas de Desenvolvimento no JavaScript
+          </span>
+        </h2>
+        <div class="footer__form-container">
+          <p class="footer__form-label">
+            Dentro do JavaScript, o acesso a um depurador se torna inestimável
+            ao desenvolver programas grandes e não triviais. Pode haver
+            diferenças de implementação entre os vários navegadores
+            (especialmente dentro do DOM), portanto, é útil ter acesso a um
+            depurador para cada um dos navegadores que um aplicativo Web tem
+            como destino.
+          </p>
+          <p class="footer__form-label">
+            Os depuradores de scripts são integrados em muitos navegadores
+            comuns, como o Internet Explorer, o Firefox, o Safari, o Google
+            Chrome, o Opera e o Node.js. Além das Ferramentas nativas para
+            desenvolvedores do Internet Explorer, três outros depuradores estão
+            disponíveis para o Internet Explorer: O Microsoft Visual Studio
+            possui o maior número de recursos dos três, seguido de perto pelo
+            Microsoft Script Editor (um componente do Microsoft Office), e
+            finalmente depurador de scripts da Microsoft gratuito. O Microsoft
+            Visual Web Developer Express gratuito fornece uma versão limitada da
+            funcionalidade de depuração do JavaScript no Microsoft Visual
+            Studio.
+          </p>
+          <p class="footer__form-label">
+            Em comparação com o Internet Explorer, o Firefox tem um conjunto
+            mais abrangente de ferramentas para desenvolvedores, que inclui
+            também um depurador. Versões antigas do Firefox sem essas
+            ferramentas usavam um addon do Firefox chamado Firebug, ou o antigo
+            depurador do Venkman. O Web Inspector WebKit inclui um depurador
+            JavaScript, que é usado no Safari. Uma versão modificada chamada
+            Blink DevTools é usada no Google Chrome. O Node.js possui o Node
+            Inspector, um depurador interativo que se integra ao Blink DevTools.
+            O Opera inclui um conjunto de ferramentas chamado Dragonfly.
+          </p>
+          <p class="footer__form-label">
+            Além do software de computador nativo, há o ambiente de
+            desenvolvimento integrado (IDEs) JavaScript on-line, que possui
+            recursos de depuração que são gravados em JavaScript e criados para
+            serem executados na Web. Um exemplo é o programa JSLint,
+            desenvolvido por Douglas Crockford, que escreveu extensivamente
+            sobre o idioma. O JSLint verifica o código JavaScript para
+            conformidade com um conjunto de padrões e diretrizes. Muitas
+            bibliotecas para JavaScript, como o three.js, fornecem links para o
+            código de demonstração que pode ser editado pelos usuários. Os
+            códigos de demonstração também são usados como uma ferramenta
+            pedagógica por instituições como a Khan Academy para permitir que os
+            alunos experimentem escrever código em um ambiente onde possam ver a
+            saída de seus programas, sem precisar de configuração além do
+            navegador da web.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <!--
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/andre-ribas1/"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+            -->
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/javascriptbrasil/"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <!--
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/andre_ribas1"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://t.me/andre_ribas"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/tg-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://instagram.com/andre_ribas1"
+              >
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            --></div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">JavaScript</h4>
+            <p class="main-footer__short-desc">
+              A atual e principal linguagem para programação client-side em
+              navegadores web.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">Copyright &copy; 2022 JavaScript.</div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
