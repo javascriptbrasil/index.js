@@ -25,6 +25,25 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+<!-- Start Open Web Analytics Tracker -->
+<script type="text/javascript">
+//<![CDATA[
+var owa_baseUrl = 'http://analytics.arnext.net/';
+var owa_cmds = owa_cmds || [];
+owa_cmds.push(['setSiteId', '1ed8e6d227b45c8de9136b481931e432']);
+owa_cmds.push(['trackPageView']);
+owa_cmds.push(['trackClicks']);
+owa_cmds.push(['trackDomStream']);
+
+(function() {
+    var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+    owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+    _owa.src = owa_baseUrl + 'modules/base/dist/owa.tracker.js';
+    var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+}());
+//]]>
+</script>
+<!-- End Open Web Analytics Code -->
   </head>
   <body>
     <header class="header">
@@ -613,21 +632,12 @@
 
         <div class="main-footer__lower">
           Copyright &copy; 2022 JavaScript - Brasil.js.org. Desenvolvido por
-          <a target="_blank" href="https://instagram.com/andreribas.web">André Ribas</a>, Hospedado no
+          <a target="_blank" href="https://andev.com.br">André Ribas</a>, Hospedado no
           <a target="_blank" href="https://pages.github.com/">GitHub</a> e domínio oferecido por
           <a target="_blank" href="https://js.org">JS.org</a>
         </div>
       </div>
     </footer>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KPY9TF07TD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){window.dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KPY9TF07TD');
-</script>
     <script src="./index.js"></script>
   </body>
 </html>
